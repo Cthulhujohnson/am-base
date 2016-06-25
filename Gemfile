@@ -6,8 +6,10 @@ gem 'rails', '4.2.5'
 
 #new gems here...
 gem "twitter-bootstrap-rails"
-
-
+gem 'devise'
+gem 'devise-bootstrap-views'
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
