@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+  <% @products.each do |product| %>
+    <div class="col-md-3 product-child">
+      <div class="well well-lg product-well">
+        <div class="product-img center">
+          <%= image_tag product.image_url.to_s, size: "200x200", alt: product.name %>
+        </div>
+        <div class="product-title">
+          <%= link_to product.name, product_path(product) %>
+        </div>
+        <div class="bold">
+          <%= number_to_currency(product.price)%>
+        </div>
+        <div>
+          <%= link_to 'Buy Now', product_path(product), :class => "btn btn-danger" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
