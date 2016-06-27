@@ -1,19 +1,20 @@
 <div class="row row-centered">
-  <div class="col-md-8 col-md-offset-2">
+  <div class="col-md-8 col-md-offset-2 col-xs-offset-2">
   <% @products.each do |product| %>
-    <div class="col-xs-12 col-md-6 col-lg-3 product-child col-centered">
+    <div class="col-xs-12 col-md-6 col-lg-4 product-child col-centered">
       <div class="well well-lg product-well">
         <div class="product-img center">
-          <%= image_tag product.image_url.to_s, size: "200x200", alt: product.name %>
+          <%= image_tag product.image_url.to_s, size: "200x200" %>
         </div>
         <div class="product-title">
           <%= link_to product.name, product_path(product) %>
+           <%= link_to 'Buy Now', product.link, :class => "btn btn-danger btn-buy" %>
         </div>
         <div class="bold">
           <%= number_to_currency(product.price)%>
         </div>
         <div>
-          <%= link_to 'Buy Now', product_path(product), :class => "btn btn-danger" %>
+          <small class="via">Via: <%= product.source %></small>
         </div>
       </div>
     </div>

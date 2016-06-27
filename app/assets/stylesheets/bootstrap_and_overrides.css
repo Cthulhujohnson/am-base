@@ -40,5 +40,15 @@
 }
 
   .product-well{
-    width: 280px;
+    width: 260px;
+    display: inline-block;
   }
+  
+ .btn-buy {
+   float: right;
+   margin-top: 4px;
+ }
+ 
+ .via{
+   color: #bdc3c7;
+ }
