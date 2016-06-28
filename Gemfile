@@ -14,6 +14,9 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 #image support
 gem "carrierwave"
 
+#social media buttons
+gem 'social-share-button'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

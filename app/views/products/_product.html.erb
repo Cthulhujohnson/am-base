@@ -16,6 +16,9 @@
         <div>
           <small class="via">Via: <%= product.source %></small>
         </div>
+        <div>
+          <%= social_share_button_tag(product.name, :url => "https://railscourse-jaesea.c9users.io/products/#{product.id}") %>
+        </div>
       </div>
     </div>
   <% end %>
