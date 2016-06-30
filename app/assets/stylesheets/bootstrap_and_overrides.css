@@ -7,11 +7,11 @@
   */
   
   .bold {
-    font-weight: bold;
+    font-weight:bold;
   }
   
   .center{
-    text-align: center;
+    text-align:center;
   }
   
  /* centered columns styles */
@@ -44,6 +44,11 @@
     display: inline-block;
   }
   
+  .product-well-lg{
+    width: 460px;
+    display: inline-block;
+  }
+  
  .btn-buy {
    float: right;
    margin-top: 4px;
@@ -51,4 +56,8 @@
  
  .via{
    color: #bdc3c7;
+ }
+
+ .fl{
+   float:left;
  }

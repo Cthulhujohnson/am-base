@@ -2,6 +2,7 @@
 
 <%= render 'product', obj: @product %>
 
+<% if user_signed_in? %>
 
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
@@ -44,3 +45,5 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_product_path,
             :class => 'btn btn-primary' %>
+
+<% end %>
