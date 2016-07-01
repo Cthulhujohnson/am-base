@@ -61,3 +61,16 @@
  .fl{
    float:left;
  }
+ 
+ .cash{
+   margin-top: 4px;
+   font-size: 1.8em;
+ }
+ 
+ .product-title{
+   border-bottom: 1px solid #eee;
+ }
+ 
+ .no-margin{
+   margin: 0;
+ }
