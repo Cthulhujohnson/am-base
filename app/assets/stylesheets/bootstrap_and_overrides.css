@@ -28,7 +28,7 @@
 }
 .col-fixed {
     /* custom width */
-    width:320px;
+    width:270px;
 }
 .col-min {
     /* custom min width */
@@ -36,7 +36,7 @@
 }
 .col-max {
     /* custom max width */
-    max-width:320px;
+    max-width:270px;
 }
 
   .product-well{
