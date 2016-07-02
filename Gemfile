@@ -11,12 +11,13 @@ gem 'devise-bootstrap-views'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
-## Gemfile for Rails 3+, Sinatra, and Merb
+## Gemfile for Rails 3+, Sinatra, and Merb pagination, used for infinite scrolling
 gem 'will_paginate', '~> 3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 
-#image support
+#image support / Amazon S3 support
 gem "carrierwave"
+gem "fog-aws"
 
 #social media buttons
 gem 'social-share-button'
