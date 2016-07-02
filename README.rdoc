@@ -5,6 +5,9 @@ it's most important features will be:
   -serving links to those products
   -tracking product clicks and user data
   -allow admin management of product catalog
+  -infinite scrolling
+  -social media buttons
 
 Updates will be made here as the app is created.
 This update was last made during the initial commit
+

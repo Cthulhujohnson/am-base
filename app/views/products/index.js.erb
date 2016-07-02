@@ -1,4 +1,4 @@
-$('#my-products').append('<%= j render @products %>');
+$('#my-products').append('<%= j render 'product', obj: @product %>');
 <% if @products.next_page %>
   $('.pagination').replaceWith('<%= j will_paginate @products %>');
 <% else %>
