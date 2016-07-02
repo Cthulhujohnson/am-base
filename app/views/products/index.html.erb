@@ -1,8 +1,10 @@
 <%- model_class = Product -%>
 
+<div id="my-products">
 <%= render 'product', obj: @product %>
+</div>
 
-<div align="center">
+<div align="center" id="infinite-scrolling">
   <%= will_paginate %>
 </div>
 
