@@ -4,10 +4,14 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.paginate(page: params[:page], per_page: 12)
-    respond_to do |format|
-    format.html
-    format.js
+    if params[:undertwenty]
+      @products = Product.where("price <= '20'").paginate(page: params[:page], per_page: 12)
+    else
+      @products = Product.paginate(page: params[:page], per_page: 12)
+      respond_to do |format|
+        format.html
+        format.js
+      end
     end
   end
   
